@@ -1,4 +1,6 @@
-#Read, show, save an image and files with cv2
+############################################################
+#### Read, show, save an image and files with cv2 ##########
+############################################################
 import cv2 as cv
 from pathlib import Path
 
@@ -11,7 +13,9 @@ img = cv.imread(img_src)
 cv.imshow('Lena Image', img)
 cv.waitKey(0)
 
-#Read, show, save an image and files with matplotlib
+############################################################
+#### Read, show, save an image and files with matplotlib ##########
+############################################################
 import matplotlib.pyplot as plt
 import matplotlib.image as mping
 
@@ -21,7 +25,9 @@ plt.imshow(img)
 plt.title("Lena Image")
 plt.show()
 
-#Read, show, save an image and files with Pillow
+############################################################
+#### Read, show, save an image and files with Pillow ##########
+############################################################
 from PIL import Image
 
 pil_img = Image.open(img_src)
