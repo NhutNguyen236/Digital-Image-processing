@@ -18,10 +18,13 @@ def read_image(image_name):
 
     return image
 
-def write_image(image_name):
+def write_image(image_name, image):
     """
         Write image to a defined path
         Input: Image readind map
     """
     ASSETS_DIR = (Path(__file__).resolve().parent.parent.parent).joinpath('assets')
-    written = cv.imwrite('')
+
+    writer = cv.imwrite(ASSETS_DIR.joinpath('Exercise01').joinpath(image_name), image)
+
+    return writer
