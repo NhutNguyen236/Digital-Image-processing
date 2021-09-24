@@ -104,10 +104,11 @@ def texting_img(image):
 
     # Using cv2.putText() method
     texted_image = cv.putText(image, message, org, font,
-                        fontScale, color, thickness, cv.LINE_AA)
+                              fontScale, color, thickness, cv.LINE_AA)
 
     cv.imshow('Texting', texted_image)
     cv.waitKey()
+
 
 # The amazing thing here is that opencv will remember the previous state of the image
 draw_circle(image)
